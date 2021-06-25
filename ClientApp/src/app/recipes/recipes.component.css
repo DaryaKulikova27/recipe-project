@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+.recipes {
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  background: #FEFEFB;
+}
+
+.recipes__header {
+  margin: 0;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 62px;
+  color: #25292D;
+}
+
+.plus-icon {
+  margin-right: 23px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: url('img/white_plus.png');
+}
+
+.add-recipe-btn {
+  padding: 16px 35px 16px 39px;
+  background: #FDB100;
+  border: none;
+  border-radius: 16px;
+}
+
+.add-recipe-btn__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-decoration: none;
+}

@@ -1,0 +1,49 @@
+.recipe-steps {
+  margin-bottom: 103px;
+  width: 100%;
+}
+
+.recipe-steps__list {
+  margin-bottom: 40px;
+  counter-reset: section;
+}
+
+.steps-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps-list__item {
+  padding: 50px 73px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+  list-style-type: none;
+}
+
+.steps-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.step-card__content::before {
+  margin-bottom: 10px;
+  display: block;
+  counter-increment: section;
+  content: "Шаг " counter(section);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4A525A;
+}
+
+.recipe-steps__footer {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #FDB100;
+  opacity: 0.5;
+  text-align: center;
+}

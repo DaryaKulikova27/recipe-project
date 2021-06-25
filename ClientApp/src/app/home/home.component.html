@@ -1,0 +1,79 @@
+<div class="container">
+  <a href="" class="link-back">Назад</a>
+  <div class="add-recipe-header">
+    <h1 class="add-recipe-header__inscription">Добавить новый рецепт</h1>
+    <div class="add-recipe-header__btn-container">
+      <button class="add-recipe-header__btn">Опубликовать</button>
+    </div>
+  </div>
+  <section class="main-info-recipe">
+    <div class="main-info-recipe__upload-picture upload-picture">
+      <form name="image1" enctype="multipart/form-data" action="/" method="POST" class="upload-picture__form" onsubmit="return UploadPic()">
+        <div class="upload-picture__input-container">
+          <div class="upload-picture__icon"></div>
+          <label class="file-upload">
+            <input type="file" />
+            <i class="fa fa-cloud-upload"></i> Загрузите фото готового блюда
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="main-info-recipe__form-container">
+      <form name="recipe-info" action="" method="POST" class="main-info-recipe__form form-recipe">
+        <input type="text" name="recipe-name" class="form-recipe__field" placeholder="Название рецепта">
+        <textarea name="recipe-desctription" cols="30" rows="10" class="form-recipe__field form-textarea" placeholder="Краткое описание рецепта (150 символов)"></textarea>
+        <input type="text" name="recipe-tags" class="form-recipe__field" placeholder="Добавить теги">
+        <div class="form-recipe__field_select-container">
+          <div class="select-container">
+            <select name="time-doing" class="form-recipe__field select-field">
+              <option class="select__option">5 минут</option>
+              <option class="select__option">10 минут</option>
+              <option class="select__option">20 минут</option>
+              <option class="select__option">30 минут</option>
+              <option class="select__option">30 минут-1 час</option>
+              <option class="select__option">больше 1 час</option>
+            </select>
+            <div class="form-recipe__field-inscription">Минут</div>
+          </div>
+          <div class="select-container">
+            <select name="serving of dishes" class="form-recipe__field select-field">
+              <option class="select__option">1</option>
+              <option class="select__option">2</option>
+              <option class="select__option">3</option>
+              <option class="select__option">4-6</option>
+              <option class="select__option">6-8</option>
+            </select>
+            <div class="form-recipe__field-inscription">Персон</div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section-cooking">
+    <div class="section-cooking__ingredients ingredients-container">
+      <h2 class="ingredients-container__header">Ингридиенты</h2>
+      <div class="ingredients-container__card card-ingredients">
+        <form action="" class="card-indridients__form form-ingredients">
+          <input type="text" class="form-ingredients__field" placeholder="Заголовок для ингридиентов">
+          <textarea name="list-of-products" cols="30" rows="10" class="form-ingredients__field textarea-list-of-products" placeholder="Список продуктов для категории"></textarea>
+        </form>
+      </div>
+      <button class="ingredients-container__btn"><span class="plus-icon"></span>Добавить заголовок</button>
+    </div>
+    <div class="section-cooking__steps steps-container">
+      <div class="steps-container__card card-steps">
+        <div class="card-steps__header steps-header">
+          <h2 class="steps-header__counter">Шаг 1</h2>
+          <span class="steps-header__close close-icon"></span>
+        </div>
+        <form action="" class="card-steps__form form-steps">
+          <textarea name="description-steps-1" cols="30" rows="10" class="form-ingredients__field textarea-steps" placeholder="Описание шага"></textarea>
+        </form>
+      </div>
+      <div class="steps-container__btn-container">
+        <button class="ingredients-container__btn add-step-btn"><span class="plus-icon"></span>Добавить шаг</button>
+      </div>
+    </div>
+  </section>
+</div>

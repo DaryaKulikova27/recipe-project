@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+.recipes-tags {
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.recipes-tags__card:not(:last-child){
+  margin-right: 29px;
+}
+
+.tag-card {
+  width: 278px;
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+}
+
+.tag-card__icon {
+  margin-bottom: 24px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFEFCC;
+  border-radius: 12px;
+}
+
+.icon-simple-menu {
+  width: 22px;
+  height: 24px;
+  background: url('./img/ic-menu.svg');
+}
+
+.icon-kids-menu {
+  width: 24px;
+  height: 24px;
+  background: url('./img/kids.svg');
+}
+
+.icon-shef-menu {
+  height: 20px;
+  width: 24px;
+  background: url('./img/shef.svg');
+}
+
+.icon-holiday-menu {
+  height: 23px;
+  width: 24px;
+  background: url('./img/holiday.svg');
+}
+
+.tag-card__name {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #25292D;
+}
+
+

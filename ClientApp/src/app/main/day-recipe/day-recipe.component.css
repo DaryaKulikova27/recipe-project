@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+.day-recipe {
+  margin-bottom: 150px;
+}
+
+.day-recipe__content-container {
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+}
+
+.main-container__img {
+  margin-right: 73px;
+  width: 543px;
+  height: 543px;
+  background: url('img/dish-of-day.jpg');
+  border-radius: 72px 0px;
+}
+
+.recipe-info {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-info__statisticks {
+  margin-left: auto;
+  margin-bottom: 23px;
+}
+
+.statisticks-block {
+  display: flex;
+}
+
+.statisticks-block__section {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #25292D;
+}
+
+.statisticks-block__section:not(:last-child) {
+  margin-right: 30px;
+}
+
+.like-icon {
+  width: 20px;
+  height: 19px;
+  display: inline-block;
+  margin-right: 9px;
+  background: url('img/like.svg');
+}
+
+.time-icon {
+  width: 18px;
+  height: 21px;
+  display: inline-block;
+  margin-right: 10px;
+  background: url('img/time.svg');
+}
+
+.recipe-info__icon {
+  margin-bottom: 32px;
+  width: 101px;
+  height: 95px;
+  background: url('img/recipeOfDay-icon.svg');
+}
+
+.recipe-info__name {
+  margin: 0;
+  margin-bottom: 16px;
+  width: 95%;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #25292D;
+}
+
+.recipe-info__description {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: 'case' on;
+  color: #4A525A;
+}

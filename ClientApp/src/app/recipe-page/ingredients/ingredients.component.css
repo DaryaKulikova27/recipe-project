@@ -1,0 +1,43 @@
+.ingridients {
+  width: 100%;
+}
+
+.ingridients__header {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #FDB100;
+}
+
+.ingridients__subtitle {
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4A525A;
+}
+
+.ingridients-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.ingridients-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.ingridients-list__item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4A525A;
+}

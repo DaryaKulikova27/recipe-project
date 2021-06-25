@@ -1,0 +1,17 @@
+ <header class="header">
+    <div class="container header-container">
+      <h1 class="header__main-inscription">Recipes</h1>
+      <nav class="header__nav header-nav">
+        <ul class="header-nav__list">
+          <li class = "header-nav__list-item" [routerLinkActive]="['link-active']"><a class = "nav-link" [routerLink]="['/main']">Главная</a></li>
+          <li class = "header-nav__list-item" [routerLinkActive]="['link-active']"><a class = "nav-link" [routerLink]="['/recipes']">Рецепты</a></li>
+          <li class = "header-nav__list-item" [routerLinkActive]="['link-active']"><a class = "nav-link" [routerLink]="['/']">Избранное</a></li>
+        </ul>
+      </nav>
+      <div class="header__log-in">
+        <div class = "log-in__avatar"></div>
+        <div class = "log-in__welcome">Привет, Татьяна</div>
+        <div class = "log-in__exit"></div>
+      </div>
+    </div>
+</header>
